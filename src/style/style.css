@@ -1,3 +1,7 @@
 body {
-  margin: 0 20px;
+  /* margin: 0 20px; */
+}
+
+.mainNav {
+  display: flex;
 }

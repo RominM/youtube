@@ -1,5 +1,5 @@
-@import './../../style/modules/module.scss';
-@import './../../style/modules/fonts.scss';
+@import './../../../style/modules/module.scss';
+@import './../../../style/modules/fonts.scss';
 
 header {
   display: flex;
@@ -9,14 +9,13 @@ header {
   height: 56px;
   padding: 7px 0;
   font-family: $mainFontReg;
-  border: solid;
-  .navigation {
+  .nav-home {
     @include flex-center;
     justify-content: space-between;
     width: 169px;
     height: 100%;
     .YT-ic {
-      margin: auto;
+      margin: auto 0;
       cursor: pointer;
       img {
         width: 106%;
