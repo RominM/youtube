@@ -1,0 +1,95 @@
+@import './../../style/modules/module.scss';
+@import './../../style/modules/fonts.scss';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  padding: 7px 0;
+  font-family: $mainFontReg;
+  border: solid;
+  .navigation {
+    @include flex-center;
+    justify-content: space-between;
+    width: 169px;
+    height: 100%;
+    .YT-ic {
+      margin: auto;
+      cursor: pointer;
+      img {
+        width: 106%;
+      }
+    }
+    .menu-ic {
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .search {
+    @include flex-center;
+    justify-content: center;
+    width: 57%;
+    max-width: 550px;
+    height: 70%;
+    label {
+      border: solid 1px #cccccc;
+      border-radius: 40px 0 0 40px;
+      text-align: center;
+      padding: 7px;
+      width: 90%;
+      height: 70%;
+      input {
+        border: none;
+        margin: auto;
+        width: 95%;
+        height: 90%;
+        outline: none;
+        font-size: 16px;
+      }
+    }
+    button {
+      border: solid 1px #cccccc;
+      border-radius: 0 40px 40px 0;
+      background-color: transparent;
+      height: 110%;
+      cursor: pointer;
+      img {
+        margin: 0 20px;
+      }
+    }
+    .micro-ic {
+      width: 12%;
+      text-align: center;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .more-user {
+    @include flex-center;
+    justify-content: space-between;
+    width: 12%;
+    max-width: 170px;
+    height: 60%;
+    .bullets-ic {
+      cursor: pointer;
+    }
+    .sign-in {
+      @include flex-center;
+      justify-content: space-between;
+      text-align: center;
+      width: 60%;
+      border: solid 1px rgba(0, 0, 0, 0.112);
+      border-radius: 16px;
+      padding: 0 7px;
+      font-family: $mainFontMed;
+      font-size: 14px;
+      color: #065fd4;
+      cursor: pointer;
+    }
+  }
+}
